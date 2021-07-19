@@ -4,8 +4,8 @@ export const validatinSchema = yup.object().shape({
   fullname: yup
     .string("fullname is not string")
     .required("this Field is Required")
-    .min(4, "least than 4 Charechters")
-    .max(150, "more than 150 Charchters"),
+    .min(6, "least than 6 Charechters")
+    .max(100, "more than 100 Charchters"),
   username: yup
     .string()
     .required("this Field is Required")
@@ -18,6 +18,6 @@ export const validatinSchema = yup.object().shape({
   password: yup
     .string()
     .required("this Field is Required")
-    .min(4, "Password Must be more than 4 charechters")
-    .max(120, "Password Must be least than 120 charechters"),
+    .min(4, "Password Should be more than 4 charechters")
+    .max(120, "Password Should be least than 120 charechters"),
 });
